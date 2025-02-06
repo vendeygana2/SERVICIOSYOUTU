@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fluid Forms</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para que ocupe toda la pantalla */
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Contenedor principal */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Estilos para el iframe del formulario */
+        .form-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilos para el botón de cierre */
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        /* Efecto hover para el botón */
+        .close-btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Botón de cierre -->
+        <button id="close-btn" class="close-btn">×</button>
+        <!-- Formulario Fluid Forms -->
+        <iframe src="https://fluidforms.co/embed/form?id=67a510a27dccdebd244090cf" frameborder="0" class="form-iframe"></iframe>
+    </div>
+
+    <script>
+        // Redirigir al hacer clic en el botón de cierre
+        document.getElementById('close-btn').addEventListener('click', function() {
+            window.location.href = 'https://www.vendeygana.net/user/';
+        });
+    </script>
+</body>
+</html>
