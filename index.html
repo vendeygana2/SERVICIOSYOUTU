@@ -23,13 +23,16 @@
             position: relative;
             width: 100%;
             height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Estilos para el iframe del formulario */
         .form-iframe {
             width: 100%;
-            height: 100%;
+            flex-grow: 1; /* Ocupa el espacio restante */
             border: none;
+            margin-bottom: 60px; /* Espacio para el botón de comprar */
         }
 
         /* Estilos para el botón de cierre */
@@ -55,6 +58,13 @@
         /* Efecto hover para el botón */
         .close-btn:hover {
             background-color: #cc0000;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            .form-iframe {
+                margin-bottom: 80px; /* Ajusta este valor según sea necesario */
+            }
         }
     </style>
 </head>
